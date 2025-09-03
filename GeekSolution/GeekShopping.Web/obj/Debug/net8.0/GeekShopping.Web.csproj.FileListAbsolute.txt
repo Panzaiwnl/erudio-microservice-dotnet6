@@ -26,7 +26,6 @@ C:\Users\pedro\OneDrive\Ambiente de Trabalho\dotnet\erudio-microservice-dotnet6\
 C:\Users\pedro\OneDrive\Ambiente de Trabalho\dotnet\erudio-microservice-dotnet6\GeekSolution\GeekShopping.Web\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\pedro\OneDrive\Ambiente de Trabalho\dotnet\erudio-microservice-dotnet6\GeekSolution\GeekShopping.Web\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\pedro\OneDrive\Ambiente de Trabalho\dotnet\erudio-microservice-dotnet6\GeekSolution\GeekShopping.Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\pedro\OneDrive\Ambiente de Trabalho\dotnet\erudio-microservice-dotnet6\GeekSolution\GeekShopping.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\pedro\OneDrive\Ambiente de Trabalho\dotnet\erudio-microservice-dotnet6\GeekSolution\GeekShopping.Web\obj\Debug\net8.0\GeekShopping.Web.dll
 C:\Users\pedro\OneDrive\Ambiente de Trabalho\dotnet\erudio-microservice-dotnet6\GeekSolution\GeekShopping.Web\obj\Debug\net8.0\refint\GeekShopping.Web.dll
 C:\Users\pedro\OneDrive\Ambiente de Trabalho\dotnet\erudio-microservice-dotnet6\GeekSolution\GeekShopping.Web\obj\Debug\net8.0\GeekShopping.Web.pdb

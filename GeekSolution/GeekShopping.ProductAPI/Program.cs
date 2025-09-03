@@ -1,28 +1,35 @@
 using GeekShopping.ProductAPI.Model.Context;
 using Microsoft.EntityFrameworkCore;
-using System;
+using GeekShopping.ProductAPI.Config;
+using AutoMapper;
+using GeekShopping.ProductAPI.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Controllers
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
-// Adiciona o DbContext
-
+// DbContext
 builder.Services.AddDbContext<MySQLContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
-    ));        
+    )
+);
+
+// AutoMapper 15+: registrar Profile diretamente
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddProfile<MappingConfig>();
+});
+
+builder.Services.AddScoped<IProductRespository, ProductRepository>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -30,7 +37,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
